@@ -1,23 +1,33 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 /* window screen */
-.fullScreen{
+.fullScreen {
     height: 100vh;
     width: 100vw;
     background-color: #1f2120;
-    display:flex;
+    display: flex;
     justify-content: center;
 }
+
 /* calscrenn */
-.calScreen{
+.calScreen {
     height: 100vh;
     width: 30vw;
     background-color: black;
 }
+
+/*media query for widht smaller than 786px (tablets & phones)*/
+@media screen and (max-width: 768px) {
+    .calScreen {
+        width: inherit;
+    }
+}
+
 /* calculator heading*/
-.calTitle{
+.calTitle {
     margin-left: 0.25%;
     height: 5vmin;
     width: 98%;
@@ -26,65 +36,73 @@
     justify-content: center;
     align-items: center;
 }
-#headText{
+
+#headText {
     color: white;
 }
 
 /* input area */
-.inputScreen{
-    margin-left:1%;
-    margin-top:1.5%;
-    height:30%;
+.inputScreen {
+    margin-left: 1%;
+    margin-top: 1.5%;
+    height: 30%;
     width: 100%;
 }
-#textArea{
+
+#textArea {
     height: 98%;
     width: 98%;
     border: none;
-    background-color:#1f2120;
-    color:white;
+    background-color: #1f2120;
+    color: white;
     font-size: 200%;
     text-align: end;
-    resize:none;
-    
-}
-/* buttons area */
-.buttonArea{
-    margin:1%;
-    height:62%;
-    width: 98%;
-    display: flex;  
-  flex-wrap: wrap;
+    resize: none;
 
 }
-.button{
-    margin-left:1%;
-    margin-top:4%;
+
+/* buttons area */
+.buttonArea {
+    margin: 1%;
+    height: 62%;
+    width: 98%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.button {
+    margin-left: 1%;
+    margin-top: 4%;
     margin-bottom: 4%;
-    height:6%;
-    width:18%;
+    height: 6%;
+    width: 18%;
     background-color: #1f2120;
     border-top-left-radius: 30%;
     border-top-right-radius: 30%;
     border-bottom-left-radius: 30%;
     border-bottom-right-radius: 30%;
     border: none;
-    display:flex;
+    display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     font-size: 150%;
     color: white;
 }
-#equal{
+
+#equal {
     background-color: #d08400;
     font-size: 200%;
 }
-#reload{
+
+#reload {
     font-size: 100%;
 }
-.special-character{
-    color:grey;
+
+.special-character {
+    color: grey;
 }
-.symbol{
-    color:#d08400;
+
+.symbol {
+    color: #d08400;
 }
